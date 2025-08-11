@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin:0;
+}
+
+.main-text{
+    font-size: 250px;
+    top:45%;
+    font-weight: 800;
+    font-family: "Rubik", sans-serif;
+}
+.text2{
+    font-size: 120px;
+    top:45%;
+    font-weight: 800;
+    font-family: "Rubik", sans-serif;
+}
+.section1{
+    background-image: url("./images/img1.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.head2{
+    font-size: 9rem;
+    font-weight: 800;
+}
+
+.glass-bg {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+  .parrot {
+    position: absolute;
+    left: -30vw;
+    width: 12%;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  /* Keyframes for a curve */
+  @keyframes flyCurve1 {
+   
+  0% { transform: translate(-200%, 0); }
+  85% { transform: translate(115vw, 12vh); }
+  100% { transform: translate(150vw, 13vh); }
+}
+
+@keyframes flyCurve2 {
+  0% { transform: translate(-200%, 0); }
+  100% { transform: translate(150vw, -25vh); }
+}
+
+@keyframes flyCurve3 {
+  0% { transform: translate(-200%, 0); }
+  75% { transform: translate(105vw, -10vh); }
+  100% { transform: translate(150vw, -10vh); }
+}
+   
+
+
+  .parrot1 {
+    top: 45%;
+    animation: flyCurve1 2s linear forwards;
+  }
+
+  .parrot2 {
+    top: 50%;
+    animation: flyCurve2 2s linear forwards;
+    animation-delay: 0.5s;
+  }
+
+  .parrot3 {
+    top: 60%;
+    animation: flyCurve3 2s linear forwards;
+    animation-delay: 0.8s;
+  }
+  .atropos-inner1{
+    background-image: url(./images/img2.jpg);
+    
+  }
+.atropos-inner{
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+  .atropos-inner2{
+    background-image:url(./images/img3.jpg) ;
+  }
+
+  .my-atropos{
+    width: 100%;
+    height: 40vh;
+  }
+ 
+  @media (max-width: 768px) {
+  .head2 {
+    font-size: 2.5rem; /* about 40px */
+  }
+}
