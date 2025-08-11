@@ -3,7 +3,9 @@
     box-sizing: border-box;
     margin:0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .main-text{
     font-size: 250px;
     top:45%;
@@ -62,8 +64,6 @@
   100% { transform: translate(150vw, -10vh); }
 }
    
-
-
   .parrot1 {
     top: 45%;
     animation: flyCurve1 2s linear forwards;
@@ -99,8 +99,4 @@
     height: 40vh;
   }
  
-  @media (max-width: 768px) {
-  .head2 {
-    font-size: 2.5rem; /* about 40px */
-  }
-}
+
